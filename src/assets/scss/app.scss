@@ -42,3 +42,16 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+.masthead{
+  padding: 3rem 0;
+  margin-bottom: 1rem;
+  background: $medium-gray;
+}
+#content{
+  font-size: 1.2rem;
+}
+
+footer{
+  background: $light-gray;
+}

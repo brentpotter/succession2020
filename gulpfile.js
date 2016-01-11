@@ -6,6 +6,7 @@ var panini   = require('panini');
 var rimraf   = require('rimraf');
 var sequence = require('run-sequence');
 var sherpa   = require('style-sherpa');
+var rsync    = require('gulp-rsync');
 
 // Check for --production flag
 var isProduction = !!(argv.production);
@@ -160,6 +161,16 @@ gulp.task('server', ['build'], function() {
   browser.init({
     server: 'dist', port: PORT
   });
+});
+
+// Transfer files to server
+gulp.task('rsync', function(){
+  return gulp.src('dist/**')
+    .pipe(rsync({
+      root: 'dist',
+      hostname: 'root@159.203.12.128',
+      destination: '/var/www/succession2020/html',
+    }));
 });
 
 // Build the site, run the server, and watch for file changes
