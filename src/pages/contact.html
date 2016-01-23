@@ -8,7 +8,7 @@ title: Contact Us
 </section>
 <div class="row">
   <div class="medium-8 columns">
-    <form>
+    <!-- <form action="https://formsubmit.io/send/afef035d-b795-4b92-af23-3de393c540ae">
       <div class="row">
         <div class="medium-6 columns">
           <label>Name
@@ -28,6 +28,16 @@ title: Contact Us
           </label>
         </div>
       </div>
+      <input type="submit" value="Submit">
+    </form> -->
+    <form action="//formspree.io/brent.ltd@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="This is a subject" />
+    <label>Name</label> <input type="text" name="name" required />
+    <label>Email</label> <input type="email" name="_replyto" required />
+    <label>Message</label> <textarea rows="2" cols="5" name="message" required > </textarea>
+    <input type="submit" />
+    <input type="hidden" name="_next" value="http://succession2020.brentpotter.com" />
+    <input type="text" name="_gotcha" style="display:none" />
     </form>
   </div>
   <div class="medium-3 columns">

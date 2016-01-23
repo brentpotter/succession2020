@@ -43,15 +43,66 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+
+p{
+  font-family: "merriweather", sans-serif;
+}
+
 .masthead{
-  padding: 3rem 0;
-  margin-bottom: 1rem;
+  padding: 5rem 0;
+  margin-bottom: 3rem;
   background: $medium-gray;
 }
+
+#homepage-masthead{
+  color: $white;
+  background: url('../img/home-bg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  h1{
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+}
+
 #content{
-  font-size: 1.2rem;
+  font-family: "merriweather", sans-serif;
+  font-size: 1.1rem;
+}
+
+#book-excerpts{
+  background: lighten($light-gray, 5%);
+  padding: 1.5rem;
+  border-radius: 5px;
+  header{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      list-style: none;
+      margin-bottom: 0.7em;
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      letter-spacing: 0.02rem;
+    }
+  }
+}
+.program-features{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.program-feature{
+  text-align: center;
 }
 
 footer{
+  font-size: 0.85rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   background: $light-gray;
 }
