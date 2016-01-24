@@ -8,39 +8,31 @@ title: Contact Us
 </section>
 <div class="row">
   <div class="medium-8 columns">
-    <!-- <form action="https://formsubmit.io/send/afef035d-b795-4b92-af23-3de393c540ae">
-      <div class="row">
-        <div class="medium-6 columns">
-          <label>Name
-            <input type="text" placeholder="Your name">
-          </label>
-        </div>
-        <div class="medium-6 columns">
-          <label>E-Mail Address
-            <input type="text" placeholder="Your email address">
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="medium-12 columns">
-          <label>Message
-            <textarea placeholder="Your message here"></textarea>
-          </label>
-        </div>
-      </div>
-      <input type="submit" value="Submit">
-    </form> -->
     <form action="//formspree.io/brent.ltd@gmail.com" method="POST">
-    <input type="hidden" name="_subject" value="This is a subject" />
+    <input type="hidden" name="_subject" value="Succession2020 online submission" />
     <label>Name</label> <input type="text" name="name" required />
     <label>Email</label> <input type="email" name="_replyto" required />
-    <label>Message</label> <textarea rows="2" cols="5" name="message" required > </textarea>
-    <input type="submit" />
+    <label>What is your inquirery about?</label>
+    <fieldset>
+      <input type="radio" name="category" value="Business Owner - Book Purchase" id="category1" required>
+      <label class="radio-contact" for="category1">Business Owner - Book Purchase</label><br>
+      <input type="radio" name="category" value="Business Owner - TWMPP" id="category2">
+      <label class="radio-contact" for="category2">Business Owner - TWMPP™</label><br>
+      <input type="radio" name="category" value="Support Provider - Partner in the Process" id="category3">
+      <label class="radio-contact" for="category3">Support Provider - Partner in the Process</label><br>
+      <input type="radio" name="category" value="Support Provider - Project Coordinator (OPC)" id="category4">
+      <label class="radio-contact" for="category4">Support Provider - Project Coordinator (OPC)</label><br>
+    </fieldset>
+    <br>
+    <label>Message</label>
+    <textarea name="message" rows="10" placeholder="Your message here"required > </textarea>
+    <input class="button" type="submit" />
     <input type="hidden" name="_next" value="http://succession2020.brentpotter.com" />
     <input type="text" name="_gotcha" style="display:none" />
     </form>
   </div>
   <div class="medium-3 columns">
     <p>Contact info:</p>
+    <a href="mailto:info@succession2020.com" target="_top">info@succession2020.com</a>
   </div>
 </div>
