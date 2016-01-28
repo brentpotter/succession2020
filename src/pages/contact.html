@@ -10,9 +10,13 @@ title: Contact Us
   <div class="medium-8 columns">
     <form action="//formspree.io/brent.ltd@gmail.com" method="POST">
     <input type="hidden" name="_subject" value="Succession2020 online submission" />
-    <label>Name</label> <input type="text" name="name" required />
-    <label>Email</label> <input type="email" name="_replyto" required />
-    <label>What is your inquirery about?</label>
+    <div class="row">
+      <div class="medium-6 columns">
+        <label>Name</label> <input type="text" name="name" required />
+        <label>Email</label> <input type="email" name="_replyto" required />
+      </div>
+    </div>
+    <label><h3>What is your interest level?</h3></label>
     <fieldset>
       <input type="radio" name="category" value="Business Owner - Book Purchase" id="category1" required>
       <label class="radio-contact" for="category1">Business Owner - Book Purchase</label><br>
@@ -25,14 +29,16 @@ title: Contact Us
     </fieldset>
     <br>
     <label>Message</label>
-    <textarea name="message" rows="10" placeholder="Your message here"required > </textarea>
+    <textarea name="message" rows="10" placeholder="Your message here" required > </textarea>
     <input class="button" type="submit" />
     <input type="hidden" name="_next" value="http://succession2020.brentpotter.com" />
     <input type="text" name="_gotcha" style="display:none" />
     </form>
   </div>
   <div class="medium-3 columns">
-    <p>Contact info:</p>
-    <a href="mailto:info@succession2020.com" target="_top">info@succession2020.com</a>
+    <div class="callout secondary">
+      <p>Contact info:</p>
+      <a href="mailto:info@succession2020.com" target="_top">info@succession2020.com</a>
+    </div>
   </div>
 </div>
