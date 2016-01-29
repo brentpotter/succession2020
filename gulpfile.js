@@ -163,13 +163,23 @@ gulp.task('server', ['build'], function() {
   });
 });
 
-// Transfer files to server
+// Transfer files to staging server
 gulp.task('rsync', function(){
   return gulp.src('dist/**')
     .pipe(rsync({
       root: 'dist',
       hostname: 'root@159.203.12.128',
       destination: '/var/www/succession2020/html',
+    }));
+});
+
+// Transfer files to staging server
+gulp.task('production', function(){
+  return gulp.src('dist/**')
+    .pipe(rsync({
+      root: 'dist',
+      hostname: 'root@159.203.0.82',
+      destination: '/var/www/html',
     }));
 });
 
