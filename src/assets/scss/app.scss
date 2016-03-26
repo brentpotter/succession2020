@@ -44,9 +44,13 @@
 @include motion-ui-animations;
 
 
-p{
-  font-family: "merriweather", sans-serif;
+
+.wrapper{
+  background: orange;
 }
+
+p{font-family: "merriweather", sans-serif;}
+
 
 #main-nav{
   a{
@@ -81,11 +85,17 @@ p{
   h1{
     line-height: 1em;
     font-size: 3.5rem;
+    @include breakpoint(small only) {
+      font-size: 3rem;
+    }
     letter-spacing: -3px;
     margin-bottom: 0;
   }
   h2{
     font-size: 2.7rem;
+    @include breakpoint(small only) {
+      font-size: 2rem;
+    }
     font-weight: 300;
     letter-spacing: -2px;
   }
@@ -156,6 +166,57 @@ p{
 
 input[type="radio"] {
   margin-bottom: 0;
+}
+
+#contact-success-message{
+  margin-top: 100px;
+}
+
+#product-list{
+  margin-top: 5rem;
+}
+
+.buy-item{
+  background: #ebebeb;
+  position: relative;
+  @include breakpoint(medium down) {
+    margin-bottom: 40px;
+  }
+  @include breakpoint(medium up) {
+    min-height: 580px;
+  }
+  .coming-soon-notice{
+    @include breakpoint(small only) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    @include breakpoint(medium up) {
+      position: absolute;
+      top: 45%;
+      width: 100%;
+    }
+    img{
+      display: block;
+      width: 32px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    p{
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .order-country{
+    color: #767676;
+    padding-left: 1.2rem;
+    padding-bottom: 0.3rem;
+    img{
+      width: 32px;
+      float: left;
+      margin-right: 0.5rem;
+    }
+  }
 }
 
 footer{

@@ -49,7 +49,7 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $primary-color: #0098F6;
 $secondary-color: #777;
-$success-color: #3adb76;
+$success-color: #7db461;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
 $light-gray: #e6e6e6;
@@ -233,7 +233,7 @@ $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: #fff;
 $button-color-alt: #000;
-$button-radius: $global-radius;
+$button-radius: 3px;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
